@@ -5,43 +5,15 @@ const symbols = require('./emagi-symbols.js');
 
 
 
-const emagiSearch = function (fullWord) {
-    matchingEmoji = []
-    
-
-    for (const word of words ){
-        let wordsIndex = words.indexOf(fullWord)
-        let emoji = symbols[wordsIndex]
-        
-    if (words.includes(word)) {
-        matchingEmoji.push(emoji)
-        
-        console.log(matchingEmoji)
-        console.log(fullWord)
-        // console.log(word)
-        // console.log(wordsIndex);
-        
-        
+const emagiSearch = function(searchTerm){
+    const results = [];
+    for (let i = 0; i < words.length; i++){
+        if (words[i].includes(searchTerm)) {
+            results.push(symbols[i]);
+        }
     }
-    
-    for (character = 0; character < fullWord.length; character++){
-        if (fullWord === words.character){
-            matchingEmoji.push(fullWord[character])
-            console.log(character)
-            }
-        
-        
-    }
-    
-
-
-
-        return matchingEmoji
-    }
+    return results
 }
-
-
-
 
 
 
