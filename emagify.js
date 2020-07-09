@@ -24,4 +24,25 @@ const emagify = function (string) {
 
 
 
+
+//---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
+
+// alternate soulution
+// const emagify = function(userWords){
+//     const results = []
+//     for (const userWord of userWords) {
+//         const wordIndex = words.indexOf(userWord);
+//         if (wordIndex === -1) {
+//             results.push(userWord)
+//         }
+//         else {
+//             results.push(symbols[wordIndex]);
+//         }
+//     }
+//     return results
+// }
+
+
+
 module.exports = emagify
